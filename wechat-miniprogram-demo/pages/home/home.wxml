@@ -1,0 +1,25 @@
+<view>
+    <button class="weui-btn weui-btn_primary">
+        main
+    </button>
+    <button class="weui-btn weui-btn_primary weui-btn_loading">
+        loading
+    </button>
+    <button class="weui-btn weui-btn_primary weui-btn_disabled">
+        disabled
+    </button>
+    <swiper 
+        indicator-dots="{{true}}"
+        autoplay="{{true}}"
+        style="width:375rpx;">
+        <swiper-item>
+            <image src="https://picsum.photos/200"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="https://picsum.photos/250"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="https://picsum.photos/300"></image>
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/home/home"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "window": {
+      "navigationBarBackgroundColor": "#ff0000",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "miniprogram demo"
+  }
+}
