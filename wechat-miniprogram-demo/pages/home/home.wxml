@@ -1,5 +1,7 @@
 <view>
-    <button class="weui-btn weui-btn_primary">
+    <text class="title">hello {{name}}</text>
+    <button bind:tap="buttonHandler">click</button>
+    <!-- <button class="weui-btn weui-btn_primary">
         main
     </button>
     <button class="weui-btn weui-btn_primary weui-btn_loading">
@@ -7,8 +9,8 @@
     </button>
     <button class="weui-btn weui-btn_primary weui-btn_disabled">
         disabled
-    </button>
-    <swiper 
+    </button> -->
+    <!-- <swiper 
         indicator-dots="{{true}}"
         autoplay="{{true}}"
         style="width:375rpx;">
@@ -21,5 +23,5 @@
         <swiper-item>
             <image src="https://picsum.photos/300"></image>
         </swiper-item>
-    </swiper>
+    </swiper> -->
 </view>
