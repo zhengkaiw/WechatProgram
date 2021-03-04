@@ -1,0 +1,4 @@
+<view>
+    <text class="title">Second</text>
+    <navigator url="../home/home">Head to main</navigator>
+</view>
