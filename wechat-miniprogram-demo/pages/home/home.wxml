@@ -1,6 +1,6 @@
 <view>
-    <text class="title">hello {{name}}</text>
-    <button bind:tap="buttonHandler">click</button>
+    <!-- <text class="title">hello {{name}}</text>
+    <button bind:tap="buttonHandler">click</button> -->
     <!-- <button class="weui-btn weui-btn_primary">
         main
     </button>
@@ -24,4 +24,10 @@
             <image src="https://picsum.photos/300"></image>
         </swiper-item>
     </swiper> -->
+    <text class="title" wx:for="{{items}}">
+        {{index}}. {{item}}
+    </text>
+    <input placeholder="Please input text" bind:input="inputHandler" />
+    <button bind:tap="buttonHandler">OK</button>
+    <button bind:tap="buttonClearHandler">Clear</button>
 </view>
