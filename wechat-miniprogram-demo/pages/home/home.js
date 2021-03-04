@@ -44,40 +44,38 @@ Page({
     //     const itemArr = wx.getStorageSync('items') || [];
     //     this.setData({ items: itemArr });
     // }
-    data: { 
-        items: [],
-        inputValue: ''
-     },
-    inputHandler(event) {
-        this.setData({
-            inputValue: event.detail.value || ''
-        });
-    },
-    buttonHandler(event) {
-        const newItem = this.data.inputValue.trim();
-        if (!newItem) return;
-        var d = JSON.stringify(newItem);
-        wx.request({
-            url: 'http://localhost:80/items',
-            method: 'POST',
-            dataType: 'json',
-            data: d,
-            header: {'content-type': 'application/x-www-form-urlencoded'},
-            success(res) {
-                console.log(res);
-            }
-        });
-    },
-    buttonClearHandler(event) {
-        console.log(this.data.items)
-    },
-    onLoad() {
-        const that = this;
-        wx.request({
-            url: 'http://localhost:80/items',
-            success(res) {
-                that.setData({ items: res.data });
-            }
-        });
-    }
+    // data: { 
+    //     items: [],
+    //     inputValue: ''
+    //  },
+    // inputHandler(event) {
+    //     this.setData({
+    //         inputValue: event.detail.value || ''
+    //     });
+    // },
+    // buttonHandler(event) {
+    //     const newItem = this.data.inputValue.trim();
+    //     if (!newItem) return;
+    //     var d = JSON.stringify(newItem);
+    //     wx.request({
+    //         url: 'http://localhost:80/items',
+    //         method: 'POST',
+    //         dataType: 'json',
+    //         data: d,
+    //         header: {'content-type': 'application/x-www-form-urlencoded'},
+    //         success(res) {
+    //             console.log(res);
+    //         }
+    //     });
+    // },
+    // onLoad() {
+    //     const that = this;
+    //     wx.request({
+    //         url: 'http://localhost:80/items',
+    //         success(res) {
+    //             that.setData({ items: res.data });
+    //         }
+    //     });
+    // }
+    
 });

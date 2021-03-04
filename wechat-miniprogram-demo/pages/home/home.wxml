@@ -24,10 +24,9 @@
             <image src="https://picsum.photos/300"></image>
         </swiper-item>
     </swiper> -->
-    <text class="title" wx:for="{{items}}">
+    <!-- <text class="title" wx:for="{{items}}">
         {{index}}. {{item}}
     </text>
     <input placeholder="Please input text" bind:input="inputHandler" />
-    <button bind:tap="buttonHandler">OK</button>
-    <button bind:tap="buttonClearHandler">Clear</button>
+    <button bind:tap="buttonHandler">OK</button> -->
 </view>
