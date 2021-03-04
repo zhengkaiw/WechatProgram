@@ -29,4 +29,14 @@
     </text>
     <input placeholder="Please input text" bind:input="inputHandler" />
     <button bind:tap="buttonHandler">OK</button> -->
+
+    <!-- <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName"></open-data> -->
+
+    <text class="title">Main</text>
+    <!-- <button open-type="getUserInfo" bind:getuserinfo="buttonHandler">Get user info</button> -->
+    
+    <!-- <navigator url="../second/second">Head to second</navigator> -->
+    <button class="weui-btn, weui-btn_primary" bind:tap="buttonHandler">Head to second</button>
+
 </view>
