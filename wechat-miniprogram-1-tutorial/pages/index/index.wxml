@@ -1,0 +1,5 @@
+<view class="container">
+    <image src='{{src}}' mode='widthFix'></image>
+    <text>{{name}}</text>
+    <button open-type="getUserInfo" bindgetuserinfo="getMyInfo">Click to get img and nickname</button>
+</view>
